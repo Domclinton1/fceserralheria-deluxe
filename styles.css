@@ -21,6 +21,13 @@ a {
     text-decoration: none;
     color: white;
 }
+a:focus,
+.cta:focus,
+.scroll-btn:focus,
+.carousel-btn:focus {
+    outline: 2px solid gold;
+    outline-offset: 4px;
+}
 .cta {
     background-color: rgb(68, 249, 68);
     max-width: 360px;
@@ -50,6 +57,9 @@ header {
 .logo img {
   width: 250px;
   filter: drop-shadow(0 0 10px gold) drop-shadow(0 0 20px #000);
+}
+.logo:focus {
+  display: none;
 }
 nav {
   display: flex;
@@ -720,13 +730,7 @@ main,
     width: 100%;
     margin: 0 auto;
 }
-a:focus,
-.cta:focus,
-.scroll-btn:focus,
-.carousel-btn:focus {
-    outline: 2px solid gold;
-    outline-offset: 4px;
-}
+
 
 
 
